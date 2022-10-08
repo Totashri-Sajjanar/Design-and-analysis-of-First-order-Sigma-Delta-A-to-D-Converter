@@ -44,7 +44,9 @@ Variations on this theme exist, employing multiple integrator stages and/or comp
 
 #### Reference Circuit
 
-![Schematic](https://user-images.githubusercontent.com/115364736/194721432-bd1dc437-10eb-4d9c-8b1a-c6ded44db977.jpg)
+![111111111111 (2)](https://user-images.githubusercontent.com/115364736/194722152-86a387dc-5833-4e57-a21e-14b3c8800119.jpg)
+
+
 
 #### Reference Waveforms
 
