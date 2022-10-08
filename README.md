@@ -219,4 +219,4 @@ ngspice Sigma_DeltaAdc.cir.out
 ### 9. AUTHOR
 
 TOTASHRI P SAJJANAR, 7th SEM B.E(ECE), SDM COLLEGE OF ENGINEERING AND TECHNOLOGY,DHARWAD-580002 
-* Contact: totashrisajjanar19@gmail.com
+* Contact:  totashrisajjanar19@gmail.com
