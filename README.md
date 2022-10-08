@@ -5,16 +5,16 @@
 
 
 ## Table of Contents
-#### 1.[ABSTRACT]
-#### 2.[SOFTWARE USED]
-#### 3.[CIRCUIT DESIGN]
-#### 4.[IMPLEMENTATION]
-#### 7.[REFERENCES]
-#### 8.[AKNOWLEDGEMENT]
+#### 1. ABSTRACT
+#### 2. SOFTWARE USED
+#### 3. CIRCUIT DESIGN
+#### 4. IMPLEMENTATION
+#### 7. REFERENCES
+#### 8. AKNOWLEDGEMENT
 
 ### 1. ABSTRACT
 
-This paper details an approach to design and analyse a First-order Sigma-Delta Analog-to-Digital Converter (ΣΔ ADC) with mixed signal approach. The design produces a high-resolution data-stream output, as this consist of the Analog-block comprising of a differentiator, an integrator and a comparator and the digital-block comprising of D-latch acting as a path of negative feedback to the difference amplifier. Sigma-Delta ADC can be used effectually to digitize the diverse types of signals around which are processing numerous applications in the field of electronics and communication systems.
+This is an approach to design and analyse a First-order Sigma-Delta Analog-to-Digital Converter (ΣΔ ADC) with mixed signal approach. The design produces a high-resolution data-stream output, as this consist of the Analog-block comprising of a differentiator, an integrator and a comparator and the digital-block comprising of D-latch acting as a path of negative feedback to the difference amplifier. Sigma-Delta ADC can be used effectually to digitize the diverse types of signals around which are processing numerous applications in the field of electronics and communication systems.
 
 ### 2. SOFTWARE USED
 
@@ -112,7 +112,8 @@ endmodule
 
 #### Schematic Diagram
 
-![111111111111 (2)](https://user-images.githubusercontent.com/115364736/194722190-2ed33fee-b8d4-4bff-9744-eb9c49c769b0.jpg)
+![111111111111 (2)](https://user-images.githubusercontent.com/115364736/194723031-00acf303-e165-413e-9e9d-334197f7587a.jpg)
+
 
 
 #### Netlists
@@ -187,8 +188,7 @@ plot v(comp_out)
 1. Open new terminal
 2. Clone this project using the following command:
 
-git clone https://github.com/Totashri-Sajjanar/abhinandann/Design and analysis of First-order Sigma-Delta 
-A-to-D Converter.git
+git clone https://github.com/Totashri-Sajjanar/Design and analysis of First-order Sigma-Delta A-to-D Converter.git
 
 3. Change Directory: 
 
