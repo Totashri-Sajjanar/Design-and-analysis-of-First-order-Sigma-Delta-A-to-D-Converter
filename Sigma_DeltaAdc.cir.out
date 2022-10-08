@@ -1,0 +1,52 @@
+* c:\users\lenovo\esim-workspace\sigma_deltaadc\sigma_deltaadc.cir
+
+.include avsd_opamp.sub
+.include "C:\FOSSEE\eSim\library\sky130_fd_pr\models\sky130_fd_pr__model__diode_pw2nd_11v0.model.spice"
+.include "C:\FOSSEE\eSim\library\sky130_fd_pr\models\sky130_fd_pr__model__pnp.model.spice"
+.include "C:\FOSSEE\eSim\library\sky130_fd_pr\models\sky130_fd_pr__model__r+c.model.spice"
+.include "C:\FOSSEE\eSim\library\sky130_fd_pr\models\sky130_fd_pr__model__diode_pd2nw_11v0.model.spice"
+.lib "C:\FOSSEE\eSim\library\sky130_fd_pr\models\sky130.lib.spice" tt
+.include "C:\FOSSEE\eSim\library\sky130_fd_pr\models\sky130_fd_pr__model__inductors.model.spice"
+.include "C:\FOSSEE\eSim\library\sky130_fd_pr\models\sky130_fd_pr__model__linear.model.spice"
+v2  analog_in gnd pulse(0 5 0.1n 0.1n 0.1n 10n 20n)
+v3 net-_x1-pad1_ net-_x1-pad2_  dc 5
+x1 net-_x1-pad1_ net-_x1-pad2_ net-_sc1-pad2_ net-_sc5-pad2_ dif_out gnd avsd_opamp
+x2 net-_x2-pad1_ net-_x2-pad2_ gnd net-_sc3-pad2_ intg_out gnd avsd_opamp
+v5 net-_x2-pad1_ net-_x2-pad2_  dc 5
+x3 net-_x3-pad1_ net-_x3-pad2_ intg_out gnd comp_out gnd avsd_opamp
+v6 net-_x3-pad1_ net-_x3-pad2_  dc 5
+* u4  bit_out net-_sc5-pad1_ dac_bridge_1
+* u1  analog_in plot_v1
+* u3  dif_out plot_v1
+* u6  intg_out plot_v1
+* u10  bit_out plot_v1
+* s c m o d e
+xsc2 net-_sc2-pad1_ dif_out net-_sc1-pad3_ sky130_fd_pr__res_generic_pd W=1 L=5.2
+xsc3 dif_out net-_sc3-pad2_ net-_sc1-pad3_ sky130_fd_pr__res_generic_pd W=1 L=5.2
+xsc4 intg_out net-_sc3-pad2_ sky130_fd_pr__cap_mim_m3_1 W=500 L=1 M=1
+* u7  comp_out plot_v1
+xsc6 net-_sc1-pad2_ net-_sc2-pad1_ net-_sc1-pad3_ sky130_fd_pr__res_generic_pd W=1 L=5.2
+xsc1 analog_in net-_sc1-pad2_ net-_sc1-pad3_ sky130_fd_pr__res_generic_pd W=1 L=5.2
+xsc5 net-_sc5-pad1_ net-_sc5-pad2_ net-_sc1-pad3_ sky130_fd_pr__res_generic_pd W=1 L=5.2
+* u2  comp_out bit_out adc_bridge_1
+v1 net-_sc1-pad3_ gnd  dc 5
+a1 [bit_out ] [net-_sc5-pad1_ ] u4
+a2 [comp_out ] [bit_out ] u2
+* Schematic Name:                             dac_bridge_1, NgSpice Name: dac_bridge
+.model u4 dac_bridge(out_low=0.0 out_high=5.0 out_undef=0.5 input_load=1.0e-12 t_rise=1.0e-9 t_fall=1.0e-9 ) 
+* Schematic Name:                             adc_bridge_1, NgSpice Name: adc_bridge
+.model u2 adc_bridge(in_low=1.0 in_high=2.0 rise_delay=1.0e-9 fall_delay=1.0e-9 ) 
+.tran 2e-09 10e-09 0e-09
+
+* Control Statements 
+.control
+run
+print allv > plot_data_v.txt
+print alli > plot_data_i.txt
+plot v(analog_in)
+plot v(dif_out)
+plot v(intg_out)
+plot v(bit_out)
+plot v(comp_out)
+.endc
+.end

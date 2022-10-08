@@ -1,0 +1,32 @@
+* C:\Users\Lenovo\eSim-Workspace\Sigma_DeltaAdc\Sigma_DeltaAdc.cir
+
+* EESchema Netlist Version 1.1 (Spice format) creation date: 10/08/22 21:43:10
+
+* To exclude a component from the Spice Netlist add [Spice_Netlist_Enabled] user FIELD set to: N
+* To reorder the component spice node sequence add [Spice_Node_Sequence] user FIELD and define sequence: 2,1,0
+
+* Sheet Name: /
+v2  Analog_in GND pulse		
+v3  Net-_X1-Pad1_ Net-_X1-Pad2_ DC		
+X1  Net-_X1-Pad1_ Net-_X1-Pad2_ Net-_SC1-Pad2_ Net-_SC5-Pad2_ Dif_out GND avsd_opamp		
+X2  Net-_X2-Pad1_ Net-_X2-Pad2_ GND Net-_SC3-Pad2_ Intg_out GND avsd_opamp		
+v5  Net-_X2-Pad1_ Net-_X2-Pad2_ DC		
+X3  Net-_X3-Pad1_ Net-_X3-Pad2_ Intg_out GND Comp_out GND avsd_opamp		
+v6  Net-_X3-Pad1_ Net-_X3-Pad2_ DC		
+U4  Bit_out Net-_SC5-Pad1_ dac_bridge_1		
+U1  Analog_in plot_v1		
+U3  Dif_out plot_v1		
+U6  Intg_out plot_v1		
+U10  Bit_out plot_v1		
+scmode1  SKY130mode		
+SC2  Net-_SC2-Pad1_ Dif_out Net-_SC1-Pad3_ sky130_fd_pr__res_generic_pd		
+SC3  Dif_out Net-_SC3-Pad2_ Net-_SC1-Pad3_ sky130_fd_pr__res_generic_pd		
+SC4  Intg_out Net-_SC3-Pad2_ sky130_fd_pr__cap_mim_m3_1		
+U7  Comp_out plot_v1		
+SC6  Net-_SC1-Pad2_ Net-_SC2-Pad1_ Net-_SC1-Pad3_ sky130_fd_pr__res_generic_pd		
+SC1  Analog_in Net-_SC1-Pad2_ Net-_SC1-Pad3_ sky130_fd_pr__res_generic_pd		
+SC5  Net-_SC5-Pad1_ Net-_SC5-Pad2_ Net-_SC1-Pad3_ sky130_fd_pr__res_generic_pd		
+U2  Comp_out Bit_out adc_bridge_1		
+v1  Net-_SC1-Pad3_ GND DC		
+
+.end
