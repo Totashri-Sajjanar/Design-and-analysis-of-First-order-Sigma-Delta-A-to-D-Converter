@@ -44,7 +44,8 @@ Variations on this theme exist, employing multiple integrator stages and/or comp
 
 #### Reference Circuit
 
-![111111111111 (2)](https://user-images.githubusercontent.com/115364736/194722152-86a387dc-5833-4e57-a21e-14b3c8800119.jpg)
+![Schematic](https://user-images.githubusercontent.com/115364736/194722211-0ede56c1-16d0-4d10-89fa-803c2db923f7.jpg)
+
 
 
 
@@ -111,7 +112,8 @@ endmodule
 
 #### Schematic Diagram
 
-![sch1](https://user-images.githubusercontent.com/91964227/194720209-26e0de75-1c29-4bc8-99c9-7cbbe606a47d.JPG)
+![111111111111 (2)](https://user-images.githubusercontent.com/115364736/194722190-2ed33fee-b8d4-4bff-9744-eb9c49c769b0.jpg)
+
 
 #### Netlists
 
