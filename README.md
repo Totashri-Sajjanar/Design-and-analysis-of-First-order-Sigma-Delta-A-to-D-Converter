@@ -44,14 +44,12 @@ Variations on this theme exist, employing multiple integrator stages and/or comp
 
 #### Reference Circuit
 
-![Schematic](https://user-images.githubusercontent.com/115364736/194722211-0ede56c1-16d0-4d10-89fa-803c2db923f7.jpg)
-
-
+![Sigma_delta_Schematic](https://user-images.githubusercontent.com/115364736/194893354-5fa38ddb-51d3-45a2-9aef-40b854262226.jpg)
 
 
 #### Reference Waveforms
 
-![Waveform](https://user-images.githubusercontent.com/115364736/194721455-98ab2dd8-42f4-497c-905c-6b4d175a33f8.jpg)
+![WAVEFORMS](https://user-images.githubusercontent.com/115364736/194893539-02870bdc-ce74-4082-9745-8348a343859b.jpg)
 
 ### 4. IMPLEMENTATION
 
@@ -102,8 +100,7 @@ endmodule
 
 #### Makerchip Plots
 
-![Verilog_code](https://user-images.githubusercontent.com/115364736/194721638-bd1efbf8-3909-4579-be7c-712ded836c68.jpg)
-
+![Makerchip_output](https://user-images.githubusercontent.com/115364736/194893882-ee659da1-bbaa-4a89-af80-24297bd8e279.jpg)
 
 #### Model For D_latch
 
@@ -112,9 +109,7 @@ endmodule
 
 #### Schematic Diagram
 
-![111111111111 (2)](https://user-images.githubusercontent.com/115364736/194723031-00acf303-e165-413e-9e9d-334197f7587a.jpg)
-
-
+![SIGMA_DELTA_CKTimplemented](https://user-images.githubusercontent.com/115364736/194894216-7fc8f3fd-6885-408e-85c3-4bd309f366d8.jpg)
 
 #### Netlists
 
@@ -171,6 +166,9 @@ plot v(comp_out)
 .endc
 .end
 
+#### NgSpice output
+
+![NgSpice_output](https://user-images.githubusercontent.com/115364736/194894631-4092eceb-6c37-426d-996e-587caf3af0b3.jpg)
 
 
 ### 5. Steps to generate NgVeri Model
